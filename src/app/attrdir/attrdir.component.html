@@ -1,0 +1,10 @@
+<p>attrdir works!</p>
+<div>ngFor</div>
+<select [(ngModel)]="color" >
+  <option>select</option>
+  <option *ngFor="let item of colors">{{item}}</option>
+</select>
+<input type="text" value="{{color}}">
+
+<h3>ngStyle</h3>
+<div [ngStyle]="{'background-color': color}">My Div Bg Color</div>

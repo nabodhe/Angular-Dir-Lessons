@@ -1,0 +1,17 @@
+<p>cpipe works!</p>
+<table border="1" width="100%">
+  <tr>
+    <td>Sr. No.</td>
+    <td>Name</td>
+    <td>Address</td>
+    <td>Salary</td>
+    <td>Doj</td>
+  </tr>
+  <tr *ngFor="let e of employees; let i=index;">
+    <td>{{i+1}}</td>
+    <td>{{e.name | uppercase}}</td>
+    <td>{{e.address | reverse}}</td>
+    <td>{{e.salary | currency}}</td>
+    <td>{{e.doj |date:'dd-MM-yyyy'}}</td>
+  </tr>
+</table>
